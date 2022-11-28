@@ -641,8 +641,7 @@ if ($design == "ltw21"){
 	if (isset ($_GET["prev"])){
 		imagecopyresized($dest, $image_logo,  $bk_size[0]-(350/$faktor*$bk_size[0]/1500)*$faktor, $bk_size[1]-(130)*$faktor, 0, 0, 307*$faktor, 100*$faktor, 372, 121);
 	} else{
-		imagecopyresampled($dest, $image_logo,  $bk_size[0]-(350*$bk_size[0]/1500), $bk_size[1]-(130), 0, 0, 307, 100, 372, 121);
-	
+		imagecopyresampled($dest, $image_logo,  $bk_size[0]-(350*$bk_size[0]/1500), $bk_size[1]-(130), 0, 0, 307, 100, 372, 121);	
 	}
 	
 //	$kastenbreite = (1385 * $groessetext/100)/(1500/$bk_size[0]);

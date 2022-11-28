@@ -89,7 +89,7 @@ if (isset($_GET["ok"])){
 		
 if (!isset ($_GET["impdat"])){
 	if(isset($_GET["id"])){
-		if(strpos($_GET["id"],"'") != false or strpos($_GET["id"],'"') != false  or strpos($_GET["id"],'’')  != false){die ("FEHLER<br>Ein potentieller Angriffsversuch auf diese Webseite wurde erkannt und blockiert.<br>Wenn dieser Fehler willkürlich auftritt, benachrichtichtigen Sie bitte den Administrator per Mail an sharepic@spd-waghaeusel.de");}
+		if(strpos($_GET["id"],"'") != false or strpos($_GET["id"],'"') != false  or strpos($_GET["id"],'’')  != false){die ("FEHLER<br>Ein potentieller Angriffsversuch auf diese Webseite wurde erkannt und blockiert.<br>Wenn dieser Fehler willkürlich auftritt, benachrichtichtigen Sie bitte den Administrator per Mail an root@ifsr.de");}
 		$ins = SQLite3::escapeString ($_GET["id"]);
 		if ($db->querySingle('SELECT * FROM "sharepics" WHERE "ID" = "'.$ins.'" ') == FALSE){
 			// ID ungültig oder nicht vorhanden
@@ -148,8 +148,8 @@ if (isset ($_GET["unkomp"])) {
 <!-- Der ifsr Sharepic-Generator wird ständig verbessert. Wenn Du einen Fehler findest, bitte melden.<br>Probleme bei der Bedienung am Handy? Dann aktiviere den Kompatibilitätsmodus. -->
 </div>
 
-<!-- Rose im Eck -->
-<img class="rose" src="data/rose-eck.png">
+<!-- lümmel im Eck -->
+<img class="lümmel" src="data/lümmel-eck.png">
 
 
 <a href="index.php<?php if(isset($_GET["id"])){ echo ("?id=".$_GET["id"]); } ?>"><img id="ico" alt="" width="120" height="120" src="data/icon.jpg"></a>
@@ -454,7 +454,7 @@ elseif ($ok == 1) {
 	<br>
 	<a href="index.php?id=<?php echo $_GET["id"];?><?php if (!isset($_COOKIE["komp"])) {echo "&komp";} else {echo "&unkomp";} ?>">Kompatibilitätsmodus <?php if (isset ($_COOKIE["komp"])) {echo "de";} ?>aktivieren</a>
 	<br><br>
-	<?php echo ($conf_titel . " Version " . $ver); ?>  adaptiert vom Fachschaftsrat, ursprünglich entwickelt von David Heger, 2020<br>Diese Software ist OpenSource und unterliegt der GNU General Public License.<br><a href="https://github.com/CheaterDieter/SPD-Sharepic-Generator">Zum GitHub-Projekt</a><br><br><?php echo ($conf_copyright); ?><br><br></div>
+	<?php echo ($conf_titel . " Version " . $ver); ?>  adaptiert vom Fachschaftsrat, ursprünglich entwickelt von David Heger, 2020 <a href="https://github.com/CheaterDieter/SPD-Sharepic-Generator">Zu seinem GitHub-Projekt</a> <br>Diese Software ist OpenSource und unterliegt der GNU General Public License.<br><br><br><?php echo ($conf_copyright); ?><br><br></div>
 	</div>
 	
 	<?php
