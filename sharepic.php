@@ -72,6 +72,7 @@ if (isset($_GET["hash"])){
 		};
 	}
 }
+
 elseif(isset($_GET["id"])){
 	if ($_GET["id"] == "") {die ("fehlerhafte ID");}
 	$db = new SQLite3("data/priv/database.sqlite");
@@ -87,7 +88,7 @@ elseif(isset($_GET["id"])){
 		die ("ID ungültig!");
 	}
 	unset($db);
-	
+   	
 	$id_auth = TRUE;
 
 	$target_dir = "up";
@@ -442,7 +443,7 @@ if ($design == "idnz"){
 	$headline = str_replace ("%S%","ß" ,$headline);
 	$subline1=mb_strtoupper ($subline1);
 	$subline1 = str_replace ("%S%","ß" ,$subline1);	
-	$color = imagecolorallocate($image_kasten, 227, 6, 19);
+	$color = imagecolorallocate($image_kasten, 0, 0, 0);
 	imagettftext($image_kasten, 55, 0, 40, 100, $color, realpath("data/priv/TheSans-B9Black.otf"), $headline);
 	imagettftext($image_kasten, 55, 0, 40, 190, $color, realpath("data/priv/TheSans-B7BoldItalic.otf"), $subline1);
 	// Kasten ins Bild legen
