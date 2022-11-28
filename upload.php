@@ -33,7 +33,7 @@
 $db = new SQLite3("data/priv/database.sqlite");
 $db->busyTimeout(5000);	
 if(isset($_GET["id"])){
-	if(strpos($_GET["id"],"'") != false or strpos($_GET["id"],'"') != false  or strpos($_GET["id"],'’')  != false){die ("FEHLER<br>Ein potentieller Angriffsversuch auf diese Webseite wurde erkannt und blockiert.<br>Wenn dieser Fehler willkürlich auftritt, benachrichtichtigen Sie bitte den Administrator per Mail an sharepic@spd-waghaeusel.de");}
+	if(strpos($_GET["id"],"'") != false or strpos($_GET["id"],'"') != false  or strpos($_GET["id"],'’')  != false){die ("FEHLER<br>Ein potentieller Angriffsversuch auf diese Webseite wurde erkannt und blockiert.<br>Wenn dieser Fehler willkürlich auftritt, benachrichtichtigen Sie bitte den Administrator per Mail an root@ifsr.de");}
 	$ins = SQLite3::escapeString ($_GET["id"]);
 	if ($db->querySingle('SELECT * FROM "sharepics" WHERE "ID" = "'.$ins.'" ') != FALSE){
 		$id = $_GET["id"];

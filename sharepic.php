@@ -31,8 +31,7 @@
 */  
 
 include "data/config.php";
-
-$path_background = "data/background.jpg";
+$path_background="data/background.jpg";
 $path_logo = "data/logo.png";
 $headline = $conf_std_headline;
 $subline1 = str_replace ("%br%", "\n", $conf_std_subline);

@@ -1,5 +1,8 @@
 <?php
-/*	This file is part of SPD Sharepic-Generator.
+/*	
+	The FSR sharepic generator is a work in progress, adapted from the SPD sharepic generator made by CheaterDieter @ Github: https://github.com/CheaterDieter/SPD-Sharepic-Generator
+	
+	This file is part of SPD Sharepic-Generator.
 
     SPD Sharepic-Generator is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

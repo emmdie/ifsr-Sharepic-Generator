@@ -145,7 +145,7 @@ if (isset ($_GET["unkomp"])) {
 <body>
 <!-- Footer -->
 <div class="footer">
-<!-- Der SPD Sharepic-Generator wird ständig verbessert. Wenn Du einen Fehler findest, bitte melden.<br>Probleme bei der Bedienung am Handy? Dann aktiviere den Kompatibilitätsmodus. -->
+<!-- Der ifsr Sharepic-Generator wird ständig verbessert. Wenn Du einen Fehler findest, bitte melden.<br>Probleme bei der Bedienung am Handy? Dann aktiviere den Kompatibilitätsmodus. -->
 </div>
 
 <!-- Rose im Eck -->
@@ -454,7 +454,7 @@ elseif ($ok == 1) {
 	<br>
 	<a href="index.php?id=<?php echo $_GET["id"];?><?php if (!isset($_COOKIE["komp"])) {echo "&komp";} else {echo "&unkomp";} ?>">Kompatibilitätsmodus <?php if (isset ($_COOKIE["komp"])) {echo "de";} ?>aktivieren</a>
 	<br><br>
-	<?php echo ($conf_titel . " Version " . $ver); ?> entwickelt von David Heger, 2020<br>Diese Software ist OpenSource und unterliegt der GNU General Public License.<br><a href="https://github.com/CheaterDieter/SPD-Sharepic-Generator">Zum GitHub-Projekt</a><br><br><?php echo ($conf_copyright); ?><br><br></div>
+	<?php echo ($conf_titel . " Version " . $ver); ?>  adaptiert vom Fachschaftsrat, ursprünglich entwickelt von David Heger, 2020<br>Diese Software ist OpenSource und unterliegt der GNU General Public License.<br><a href="https://github.com/CheaterDieter/SPD-Sharepic-Generator">Zum GitHub-Projekt</a><br><br><?php echo ($conf_copyright); ?><br><br></div>
 	</div>
 	
 	<?php
